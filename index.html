@@ -3,8 +3,314 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
+	<header class="main-header">
+		<div class="container clearfix">
+			<div class="row">
+				<a class="col-3 main-header__logo" href="#" title="Главная страница">Монгольфьеркин и КО</a>
+				<ul class="col-7 col-offset-2 main-header__nav">
+					<li class="main-header-nav-item"><a href="#" title="">Кто мы</a></li>
+					<li class="main-header-nav-item"><a href="#" title="">Фотографии</a></li>
+					<li class="main-header-nav-item"><a href="#" title="">План полета</a></li>
+					<li class="main-header-nav-item"><a href="#" title="">Заказать</a></li>
+					<li class="main-header-nav-item"><a href="#" title="">Команда</a></li>
+					<li class="main-header-nav-item"><a href="#" title="">Контакты</a></li>	
+				</ul>
+			</div>	
+		</div>
+	</header>		
+	<main>
+		<section class="promo">
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="promo-title">Организация полетов на воздушных шарах</h1>
+						<a href="#" class="button button--promo">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="advantages">
+			<div class="container clearfix">
+				<div class="row">
+					<p class="col-3 advantages-item advantages-item--like">Современный надежный шар</p>
+					<p class="col-3 advantages-item advantages-item--spectacles">Обучение пилотированию</p>
+					<p class="col-3 advantages-item advantages-item--photo">Фотосъемка в полете</p>
+					<p class="col-3 advantages-item advantages-item--binoculars">Потрясающие виды</p>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-4">
+						<h2 class="about-title">Вкратце</h2>
+						<p class="about-description">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. Мы предлагаем полетать с нами!</p>
+					</div>
+					<div class="col-8">
+						<iframe width="748" height="421" src="https://www.youtube.com/embed/nWAGLkyxQG0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-12">
+						<h2>Галерея</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="description">
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-12">
+						<h2>Как проходят полеты</h2>
+						<div class="description-balloon description-balloon--one">
+							<p class="description-ballon-title">Взлет</p>
+							<p class="description-ballon-num">1</p>
+						</div>
+						<div class="description-balloon description-balloon--two">
+							<p class="description-ballon-title">Набираем высоту</p>
+							<p class="description-ballon-num">2</p>
+						</div>
+						<div class="description-balloon description-balloon--three">
+							<p class="description-ballon-title">Летаем</p>
+							<p class="description-ballon-num">3</p>
+						</div>
+						<div class="description-balloon description-balloon--four">
+							<p class="description-ballon-title">Снижаемся</p>
+							<p class="description-ballon-num">4</p>
+						</div>
+						<div class="description-balloon description-balloon--five">
+							<p class="description-ballon-title">Садимся</p>
+							<p class="description-ballon-num">5</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="date">
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-5">До ближайшего полета</div>
+					<div class="col-5 col-offset-2">2 дня 16 часов 8 минут 14 секунд</div>
+				</div>
+			</div>
+		</section>
+		<section class="calculator">
+			<div class="container clearfix">
+				<div class="col-5">
+					<h2>Расчитать стоимость</h2>
+					<p class="calculator-description">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки. Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». Выбирайте, куда мы полетим сегодня!</p>
+				</div>
+				<div class="col-6 col-offset-1">
+					<form action="#" method="post" name="calculator">
+						<label class="" for="calculator-route">Маршрут полета:</label>
+						<select name="calculator-route" id="calculator-route">
+							<option value="Сестрорецк-Парнас" selected>Сестрорецк-Парнас</option>
+							<option value="Старая деревня">Старая деревня</option>
+							<option value="Ленина">Ленина</option>
+						</select><br>
+						<label for="calculator-quantity">Количество человек:</label>
+						<select name="calculator-quantity" id="calculator-quantity">
+							<option value="1">1</option>
+							<option value="2" selected="">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select><br>
+						<label for="calculator-surname">Имя и фамилия:</label>
+						<input type="text" id="calculator-surname" name="surname"><br>
+						<label for="calculator-tel">Телефон:</label>
+						<input id="calculator-tel" type="text" name="calculator-tel">
+						<div class="calculator-price">
+							<div class="row">
+								<div class="col6">
+									<span class="calculator-price-title">Стоимость:</span>
+									<span class="calculator-price-figures">9000 Р</span>
+								</div>
+								<div class="col6"><input type="submit" value="Полетели"></div>
+							</div>
+						</div>
+					</form>	
+				</div>
+			</div>
+		</section>
+		<section class="payments-questions">
+			<div class="container clearfix">
+				<div class="row">
+					<section class="col-5">
+						<h2 class="payments-questions-title">Способы оплаты</h2>
+						<article>
+							<h3>Наличными</h3>	
+							<p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
+							<ul>
+								<li>по телефону: +7 (812) 640-19-39</li>
+								<li>или по почте: mnebyvnebo@gmail.com</li>
+							</ul>
+							<p>Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
+						</article>
+						<article>
+							<h3>Курьеру</h3>
+							<p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
+							<ul>
+								<li>по телефону: +7 (812) 640-19-39</li>
+								<li>или по почте: mnebyvnebo@gmail.com</li>
+							</ul>
+							<p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
+						</article>
+					</section> 
+					<section class="col-6 col-offset-1">
+						<h2>Частые вопросы</h2>	
+						<article class="question-item">
+							<h4 class="question-item-title">Что взять с собой в полет?</h4>
+							<p class="question-item-description">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
+						</article>
+						<article class="question-item">
+							<h4 class="question-item-title">Что если мы улетим не в ту сторону?</h4>
+							<p class="question-item-description">Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</p>
+						</article>	
+						<article class="question-item">
+							<h4 class="question-item-title">Что делать, если в полете станет плохо?</h4>
+							<p class="question-item-description">В наших аптечках заготовлены в больших количествах разные лекарства, в том числе средства от укачивания, пакетики, а каждый пилот прошел специальную подготовку по оказанию первой помощи. В экстренной ситуациях сразу же совершим посадку. Мы не дадим вам оказаться в беде</p>
+						</article>	
+						<article class="question-item">
+							<h4 class="question-item-title">А полет – это действительно так здорово?</h4>
+							<p class="question-item-description">Это в тысячу раз лучше шоколада</p>
+						</article>
+					</section> 
+				</div>
+			</div>
+		</section>
+		<section class="flying">
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-12">
+						<div class="flying-item left">
+							<p class="flying-item-number">700</p>
+							<p class="flying-item-description">Полетов в год</p>
+						</div>
+						<div class="flying-item left">
+							<p class="flying-item-number">3000</p>
+							<p class="flying-item-description">Средняя дальность в метрах</p>
+						</div>
+						<div class="flying-item left">
+							<p class="flying-item-number">3</p>
+							<p class="flying-item-description">Воздушных шара</p>
+						</div>
+						<div class="flying-item left">
+							<p class="flying-item-number">12</p>
+							<p class="flying-item-description">Человек в команде</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="command">
+			<div class="container clearfix">
+				<div class="row">
+					<div class="col-3">
+						<div class="team-item__img">
+        					<img src="http://placehold.it/100" alt="" />
+       					</div>
+      					<p class="team-item__title">Мария Мариевна</p>
+      					<p class="team-item__description">Старший пилот</p>
+    				</div>
+					<div class="col-3">
+						<div class="team-item__img">
+        					<img src="http://placehold.it/100" alt="" />
+       					</div>
+      					<p class="team-item__title">Мария Мариевна</p>
+      					<p class="team-item__description">Старший пилот</p>						
+					</div>
+					<div class="col-3">
+						<div class="team-item__img">
+        					<img src="http://placehold.it/100" alt="" />
+       					</div>
+      					<p class="team-item__title">Мария Мариевна</p>
+      					<p class="team-item__description">Старший пилот</p>		
+					</div>
+					<div class="col-3">
+						<div class="team-item__img">
+        					<img src="http://placehold.it/100" alt="" />
+       					</div>
+      					<p class="team-item__title">Мария Мариевна</p>
+      					<p class="team-item__description">Старший пилот</p>						
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews">
+			<div class="container clearfix">
+				<h2>Отзывы</h2>
+				<div class="row">
+					<div class="col-6">
+						<img src="" alt="">
+						<blockquote class="reviews-item">
+							<cite>Ольга Алексеева</cite>
+							<p>Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</p>
+						</blockquote>
+					</div>
+					<div class="col-6">
+						<img src="" alt="">
+						<blockquote class="reviews-item">
+							<cite>Артем Рыбкин</cite>
+							<p>Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.</p>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="address">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 address-airport">
+						<p class="address_title">Запишите адрес аэропорта</p>
+						<p class="address_description">Всеволожск, улица Аэродромная 19а</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<p class="address_city">Наш офис в Питере:</p>
+						<p class="address_street">Литейный 14Б</p>
+						<p class="address_time">12:00 - 19:00</p>
+						<p class="address_phone">746-67-33</p>
+					</div>
+					<div class="col-4">
+						<p class="address_city">Наш офис во Всеволожске:</p>
+						<p class="address_street">Аэродромная 19А</p>
+						<p class="address_time">12:00 - 19:00</p>
+						<p class="address_phone">746-67-33</p>						
+					</div>
+					<div class="col-4">
+						<p class="address_mail">mnebyvnebo@gmail.com</p>
+						<p class="address_social"></p>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="footer-menu">
+			<div class="container">
+				<div class="row">
+				<a class="col-3 footer-menu__logo" href="#" title="Главная страница">Монгольфьеркин и КО</a>
+				<ul class="col-7 col-offset-2 footer-menu__nav">
+					<li class="footer-menu-nav-item"><a href="#" title="">Кто мы</a></li>
+					<li class="footer-menu-nav-item"><a href="#" title="">Фотографии</a></li>
+					<li class="footer-menu-nav-item"><a href="#" title="">План полета</a></li>
+					<li class="footer-menu-nav-item"><a href="#" title="">Заказать</a></li>
+					<li class="footer-menu-nav-item"><a href="#" title="">Команда</a></li>
+					<li class="footer-menu-nav-item"><a href="#" title="">Контакты</a></li>	
+				</ul>
+				</div>
+			</div>	
+		</div>
+	</footer>
 </body>
 </html>
