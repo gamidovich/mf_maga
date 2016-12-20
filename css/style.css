@@ -79,10 +79,16 @@ body {
 .footer-menu { background-color: #2c2c2c; }
 
 .main-header__logo,
-.footer-menu__logo { 
+.footer-menu__logo {
+	padding-top: 17px; 
 	color: #fff;
 	font-size: 22px;
 	text-decoration: none;
+}
+
+.main-header__nav { 
+	padding-top: 22px;
+	padding-bottom: 19px;
 }
 
 .main-header-nav-item,
@@ -94,7 +100,7 @@ body {
 .main-header-nav-item a:visited,
 .footer-menu-nav-item a:link,
 .footer-menu-nav-item a:visited {
-	padding: 10px;
+	padding: 5px 11px;
 	text-decoration: none;
 	color: #fff;
 	font-size: 16px;
@@ -123,6 +129,7 @@ body {
 }
 
 .promo-title {
+	padding: 100px 0 138px 0;
 	font-size: 66px;
 	color: #fff;
 }
@@ -136,20 +143,22 @@ body {
 .button--promo:after {
 	position: absolute;
 	left: 50%;
-	bottom: -68px;
+	bottom: 0px;
 	content: "";
 	display: block;
 	width: 18px;
 	height: 29px;
 	background-image: url(../images/arrow-promo.png);
 	background-repeat: no-repeat;
+	margin-left: -9px;
+	background-color: red;
 }
 
 .advantages { padding-top: 76px; }
 
 .advantages-item {
 	padding-right: 40px;
-	padding-left: 88px;
+	padding-left: 78px;
 	font-size: 16px;
 	font-weight: bold;
 	background-repeat: no-repeat;
@@ -165,7 +174,7 @@ body {
 	position: relative;
 	background-image: url(../images/path.png), url(../images/mountain.jpg);
 	background-repeat: no-repeat;
-	background-size: 50%, cover;
+	background-size: 80%, cover;
 	background-position: center;
 	min-height: 712px;
 }
