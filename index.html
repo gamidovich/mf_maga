@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="OwlCarousel2/OwlCarousel2-2.2.0/dist/assets/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="OwlCarousel2/OwlCarousel2-2.2.0/dist/assets/owl.theme.default.min.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -49,7 +51,7 @@
 			<div class="container clearfix">
 				<div class="row">
 					<div class="col-4">
-						<h2 class="about-title">Вкратце</h2>
+						<h2 class="title">Вкратце</h2>
 						<p class="about-description">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. Мы предлагаем полетать с нами!</p>
 					</div>
 					<div class="col-8">
@@ -60,9 +62,15 @@
 		</section>
 		<section class="gallery">
 			<div class="container clearfix">
+				<h2 class="title title--center">Галерея</h2>
 				<div class="row">
-					<div class="col-12">
-						<h2>Галерея</h2>
+					<div class="owl-carousel col-10 col-offset-1">
+					  <div class="item"><img src="images/img1.jpg" alt=""></div>
+					  <div class="item"><img src="images/img2.jpg" alt=""></div>
+					  <div class="item"><img src="images/img3.jpg" alt=""></div>
+					  <div class="item"><img src="images/img4.jpg" alt=""></div>
+					  <div class="item"><img src="images/img5.jpg" alt=""></div>
+					  <div class="item"><img src="images/img6.jpg" alt=""></div>
 					</div>
 				</div>
 			</div>
@@ -71,7 +79,7 @@
 			<div class="container clearfix">
 				<div class="row">
 					<div class="col-12">
-						<h2>Как проходят полеты</h2>
+						<h2 class="title title--center">Как проходят полеты</h2>
 						<div class="description-balloon description-balloon--one">
 							<p class="description-ballon-title">Взлет</p>
 							<p class="description-ballon-num">1</p>
@@ -107,7 +115,7 @@
 		<section class="calculator">
 			<div class="container clearfix">
 				<div class="col-5">
-					<h2>Расчитать стоимость</h2>
+					<h2 class="title">Расчитать стоимость</h2>
 					<p class="calculator-description">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки. Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». Выбирайте, куда мы полетим сегодня!</p>
 				</div>
 				<div class="col-6 col-offset-1">
@@ -313,5 +321,17 @@
 			</div>	
 		</div>
 	</footer>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="OwlCarousel2/OwlCarousel2-2.2.0/dist/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $(".owl-carousel").owlCarousel({
+		  	items: 4,
+		  	nav: true,
+		  	margin: 16,
+		  	navText: ["<img src='images/arrow-left.png'>","<img src='images/arrow-right.png'>"]
+		  });
+		});
+	</script>
 </body>
 </html>
