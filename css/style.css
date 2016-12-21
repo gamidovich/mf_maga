@@ -135,40 +135,45 @@ body {
 }
 
 .button--promo {
-	position: relative;
+	display: inline-block;
 	border: 1px solid #fff;
 	padding: 13px;
 }
 
-.button--promo:after {
-	position: absolute;
-	left: 50%;
-	bottom: 0px;
-	content: "";
+.button--promo-arrow {
 	display: block;
-	width: 18px;
-	height: 29px;
 	background-image: url(../images/arrow-promo.png);
 	background-repeat: no-repeat;
-	margin-left: -9px;
-	background-color: red;
+	width: 18px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 38px;
 }
 
 .advantages { padding-top: 76px; }
 
 .advantages-item {
-	padding-right: 40px;
-	padding-left: 78px;
+	position: relative;
 	font-size: 16px;
 	font-weight: bold;
-	background-repeat: no-repeat;
-	background-position: left center;
 }
 
-.advantages-item--like { background-image: url(../images/like.png); }
-.advantages-item--spectacles { background-image: url(../images/spectacles.png); }
-.advantages-item--photo { background-image: url(../images/photo.png); }
-.advantages-item--binoculars { background-image: url(../images/binoculars.png); }
+.advantages-item:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	content: "";
+	display: block;
+	background-image: url(../images/spritesheet.png);
+	background-repeat: no-repeat;
+}
+
+.advantages-item--like:before { background-position: -95px 0; }
+.advantages-item--spectacles:before { background-position: 0px 0 }
+.advantages-item--photo:before {  }
+.advantages-item--binoculars:before { }
 
 .description {
 	position: relative;
