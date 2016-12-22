@@ -227,7 +227,7 @@ h3 {
 	background-repeat: no-repeat;
 	background-size: 80%, cover;
 	background-position: center;
-	min-height: 712px;
+	min-height: 760px;
 }
 
 .description-balloon {
@@ -256,28 +256,28 @@ h3 {
 }
 
 .description-balloon--one {
-	left: 270px;
-	bottom: 80px;
+	left: 120px;
+	top: 340px;
 }
 
 .description-balloon--two {
-	left: 540px;
-	bottom: 208px;
+	left: 340px;
+	top: 280px;
 }
 
 .description-balloon--three {
-	left: 640px;
-	bottom: 208px;
+	left: 620px;
+	top: 160px;
 }
 
 .description-balloon--four {
-	left: 740px;
-	bottom: 208px;
+	right: 340px;
+	top: 280px;
 }
 
 .description-balloon--five {
-	left: 840px;
-	bottom: 208px;
+	right: 120px;
+	top: 340px;
 }
 
 .date { 
