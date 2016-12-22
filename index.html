@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Монгольфьеркин и КО</title>
 	<link rel="stylesheet" href="OwlCarousel2/OwlCarousel2-2.2.0/dist/assets/owl.carousel.min.css">
-	<!-- <link rel="stylesheet" href="OwlCarousel2/OwlCarousel2-2.2.0/dist/assets/owl.theme.default.min.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -15,12 +14,12 @@
 			<div class="row">
 				<a class="col-3 main-header__logo" href="#" title="Главная страница">Монгольфьеркин и КО</a>
 				<ul class="col-7 col-offset-2 main-header__nav">
-					<li class="main-header-nav-item"><a href="#" title="">Кто мы</a></li>
-					<li class="main-header-nav-item"><a href="#" title="">Фотографии</a></li>
-					<li class="main-header-nav-item"><a href="#" title="">План полета</a></li>
-					<li class="main-header-nav-item"><a href="#" title="">Заказать</a></li>
-					<li class="main-header-nav-item"><a href="#" title="">Команда</a></li>
-					<li class="main-header-nav-item"><a href="#" title="">Контакты</a></li>	
+					<li class="main-header-nav-item"><a href="#about" title="">Кто мы</a></li>
+					<li class="main-header-nav-item"><a href="#photo" title="">Фотографии</a></li>
+					<li class="main-header-nav-item"><a href="#plan" title="">План полета</a></li>
+					<li class="main-header-nav-item"><a href="#order" title="">Заказать</a></li>
+					<li class="main-header-nav-item"><a href="#command" title="">Команда</a></li>
+					<li class="main-header-nav-item"><a href="#contact" title="">Контакты</a></li>	
 				</ul>
 			</div>	
 		</div>
@@ -51,7 +50,7 @@
 			<div class="container clearfix">
 				<div class="row">
 					<div class="col-4">
-						<h2 class="title">Вкратце</h2>
+						<h2 class="title" id="about">Вкратце</h2>
 						<p class="about-description">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. Мы предлагаем полетать с нами!</p>
 					</div>
 					<div class="col-8">
@@ -62,22 +61,22 @@
 		</section>
 		<section class="gallery">
 			<div class="container clearfix">
-				<h2 class="title title--center">Галерея</h2>
+				<h2 class="title title--center" id="photo">Галерея</h2>
 				<div class="row">
 					<div class="owl-carousel col-10 col-offset-1">
-					  <div class="item"><img src="images/img1.jpg" alt=""></div>
-					  <div class="item"><img src="images/img2.jpg" alt=""></div>
-					  <div class="item"><img src="images/img3.jpg" alt=""></div>
-					  <div class="item"><img src="images/img4.jpg" alt=""></div>
-					  <div class="item"><img src="images/img5.jpg" alt=""></div>
-					  <div class="item"><img src="images/img6.jpg" alt=""></div>
+					  <div class="item"><img src="images/4.jpg" alt=""></div>
+					  <div class="item"><img src="images/5.jpg" alt=""></div>
+					  <div class="item"><img src="images/6.jpg" alt=""></div>
+					  <div class="item"><img src="images/7.jpg" alt=""></div>
+					  <div class="item"><img src="images/4.jpg" alt=""></div>
+					  <div class="item"><img src="images/4.jpg" alt=""></div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="description">
 			<div class="container clearfix">
-				<h2 class="title title--center">Как проходят полеты</h2>
+				<h2 class="title title--center" id="plan">Как проходят полеты</h2>
 				<div class="row">
 					<div class="col-12">
 						<div class="description-balloon description-balloon--one">
@@ -115,7 +114,7 @@
 		<section class="calculator">
 			<div class="container clearfix">
 				<div class="col-5">
-					<h2 class="title">Расчитать стоимость</h2>
+					<h2 class="title" id="order">Расчитать стоимость</h2>
 					<div class="calculator-description">
 						<p>Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
 						<p>Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох».</p> 
@@ -258,7 +257,7 @@
 		</section>
 		<section class="command">
 			<div class="container clearfix">
-				<h2 class="title title--center">Команда инструкторов</h2>
+				<h2 class="title title--center" id="command">Команда инструкторов</h2>
 				<div class="row">
 					<div class="col-3">
 						<div class="team-item__img">
@@ -322,7 +321,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 address-airport">
-						<p class="address_title">Запишите адрес аэропорта</p>
+						<p class="address_title" id="contact">Запишите адрес аэропорта</p>
 						<p class="address_description">Всеволожск, улица Аэродромная 19а</p>
 					</div>
 				</div>
@@ -340,8 +339,12 @@
 						<p class="address_phone">746-67-33</p>						
 					</div>
 					<div class="col-4">
-						<p class="address_mail address_city--mail">mnebyvnebo@gmail.com</p>
-						<p class="address_social"></p>
+						<p class="address_mail address_city--mail"><a class="mail" href="mailto:mnebyvnebo@gmail.com">mnebyvnebo@gmail.com</a></p>
+						<div class="address_social">
+							<div class="address-social-item"><a href="#" title="Мы в Вконтакте"><img src="images/vkontakte-logo.svg" alt=""></a></div>
+							<div class="address-social-item"><a href="#" title="Мы в Фейсбук"><img src="images/facebook-logo.svg" alt=""></a></div>
+							<div class="address-social-item"><a href="#" title="Мы в Инстаграм"><img src="images/instagram-logo.svg" alt=""></a></div>
+						</div>
 					</div>
 				</div>
 			</div>	
@@ -351,12 +354,12 @@
 				<div class="row">
 				<a class="col-3 footer-menu__logo" href="#" title="Главная страница">Монгольфьеркин и КО</a>
 				<ul class="col-7 col-offset-2 footer-menu__nav">
-					<li class="footer-menu-nav-item"><a href="#" title="">Кто мы</a></li>
-					<li class="footer-menu-nav-item"><a href="#" title="">Фотографии</a></li>
-					<li class="footer-menu-nav-item"><a href="#" title="">План полета</a></li>
-					<li class="footer-menu-nav-item"><a href="#" title="">Заказать</a></li>
-					<li class="footer-menu-nav-item"><a href="#" title="">Команда</a></li>
-					<li class="footer-menu-nav-item"><a href="#" title="">Контакты</a></li>	
+					<li class="footer-menu-nav-item"><a href="#about" title="">Кто мы</a></li>
+					<li class="footer-menu-nav-item"><a href="#photo" title="">Фотографии</a></li>
+					<li class="footer-menu-nav-item"><a href="#plan" title="">План полета</a></li>
+					<li class="footer-menu-nav-item"><a href="#order" title="">Заказать</a></li>
+					<li class="footer-menu-nav-item"><a href="#command" title="">Команда</a></li>
+					<li class="footer-menu-nav-item"><a href="#contact" title="">Контакты</a></li>	
 				</ul>
 				</div>
 			</div>	
@@ -370,6 +373,7 @@
 		  	items: 4,
 		  	nav: true,
 		  	margin: 16,
+		  	loop: true,
 		  	navText: ["<img src='images/arrow-left.png'>","<img src='images/arrow-right.png'>"]
 		  });
 		});

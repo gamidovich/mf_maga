@@ -96,7 +96,16 @@ h3 {
 	background-position: center bottom;
 }
 
-.owl-item .item > img { height: 244px; }
+.owl-item .item {
+	width: 245px;
+	height: 245px;
+}
+
+.owl-item .item > img { 
+	width: 90%;
+	height: 90%;
+	max-width: 90%;
+}
 
 .owl-prev,
 .owl-next {
@@ -116,6 +125,8 @@ h3 {
 	text-decoration: underline; 
 	color: #444;
 }
+
+* { outline: none !important; }
 
 /* main-header */
 
@@ -495,8 +506,8 @@ h3 {
 .address_city--mail:before { 
 	position: absolute;
 	top: 0;
-	left: 0;
-	background-position: -50px -5px;
+	left: 10px;
+	background-position: -50px 5px;
 }
 
 .address_street,
@@ -512,5 +523,24 @@ h3 {
 	color: #292929;
 	font-weight: bold;
 }
+
+.address-social-item {
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin-left: 22px;
+}
+
+.address-social-item:first-child {
+	margin-left: 10px;
+}
+
+.address-social-item img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+
+.address-social-item img:hover { opacity: .7; }
 
 /* footer */
