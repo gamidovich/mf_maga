@@ -123,41 +123,66 @@
 					 </div>
 				</div>
 				<div class="col-6 col-offset-1">
-					<div class="row">
-						<div class="col-6">
-							<label for="calculator-route">Маршрут полета:</label>
-							<label for="calculator-quantity">Количество человек:</label>
-							<label for="calculator-surname">Имя и фамилия:</label>
-							<label for="calculator-tel">Телефон:</label>
+					<form class="calculator-form" action="#" method="post" name="calculator">
+						<div class="row">
+							<div class="col-6">
+								<label for="calculator-route">Маршрут полета:</label>
+							</div>
+							<div class="col-6">
+								<div class="calculator-select">
+									<select name="calculator-route" id="calculator-route">
+										<option value="Сестрорецк-Парнас" selected>Сестрорецк-Парнас</option>
+										<option value="Старая деревня">Старая деревня</option>
+										<option value="Ленина">Ленина</option>
+									</select>	
+								</div>		
+							</div>
 						</div>
-						<div class="col-6">
-							<form class="calculator-form" action="#" method="post" name="calculator">								
-								<select class="calculator-select" name="calculator-route" id="calculator-route">
-									<option value="Сестрорецк-Парнас" selected>Сестрорецк-Парнас</option>
-									<option value="Старая деревня">Старая деревня</option>
-									<option value="Ленина">Ленина</option>
-								</select>								
-								<select class="calculator-select"  name="calculator-quantity" id="calculator-quantity">
-									<option value="1">1</option>
-									<option value="2" selected="">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-								</select>								
-								<input class="calculator-input" type="text" id="calculator-surname" name="surname"><br>								
-								<input class="calculator-input" id="calculator-tel" type="text" name="calculator-tel">
-								<div class="calculator-price">
-									<div class="row">
-										<div class="col6">
-											<span class="calculator-price-title">Стоимость:</span>
-											<span class="calculator-price-figures">9000 Р</span>
-										</div>
-										<div class="col6"><input type="submit" value="Полетели"></div>
-									</div>
+						<div class="row">
+							<div class="col-6">
+								<label for="calculator-quantity">Количество человек:</label>
+							</div>
+							<div class="col-6">
+								<div class="calculator-select">
+									<select  name="calculator-quantity" id="calculator-quantity">
+										<option value="1">1</option>
+										<option value="2" selected="">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>					
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<label for="calculator-surname">Имя и фамилия:</label>
+							</div>
+							<div class="col-6">
+								<div class="calculator-input">
+									<input type="text" id="calculator-surname" name="surname">									
 								</div>
-							</form>
-							
+							</div>
 						</div>
-					</div>	
+						<div class="row">
+							<div class="col-6">
+								<label for="calculator-tel">Телефон:</label>
+							</div>
+							<div class="col-6">
+								<div class="calculator-input">
+									<input id="calculator-tel" type="text" name="calculator-tel">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<span class="calculator-price-title">Стоимость:</span>
+								<span class="calculator-price-figures">9000 Р</span>
+							</div>
+							<div class="col-6">
+								<input type="submit" value="Полетели">
+							</div>
+						</div>
+					</form>		
 				</div>
 			</div>
 		</section>
