@@ -295,6 +295,17 @@ h3 {
 	min-height: 446px;
 }
 
+.calculator label {
+	width: 198px;
+}
+
+
+.calculator-input,
+.calculator-select {
+	width: 100%;
+	padding: 6px;
+}
+
 .payments-questions__item {	margin-bottom: 45px; }
 
 .payments-questions-item-list {
